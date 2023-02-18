@@ -1,0 +1,130 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 16vh;
+}
+header nav {
+  width: 85%;
+  height: 100%;
+}
+header nav ul {
+  width: 50%;
+  overflow: hidden;
+}
+header nav button {
+  display: none;
+}
+
+.button-special {
+  background-image: linear-gradient(to right, #0944b6, #439af7);
+  padding: 16px 18px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 990px) {
+  header nav button {
+    display: block;
+  }
+  header nav .sp-ul {
+    display: none !important;
+  }
+  header nav a {
+    display: none !important;
+  }
+}
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-23 {
+  font-size: 23px;
+}
+
+.fs-60 {
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+
+.color-blue {
+  color: #1b5fc7;
+}
+
+.color-orange {
+  color: rgba(237, 123, 92, 0.8666666667);
+}
+
+.bg-blue {
+  background-color: #1446b2;
+}
+
+.bg-orange {
+  background-color: #f17e59;
+}
+
+.bg-light-blue {
+  background-color: #f1f5f9;
+}
+
+.bg-light-grey {
+  background-color: #181c2b;
+}
+
+.bg-dark-blue {
+  background-color: #101320;
+}
+
+.border-dotted {
+  border: 1.4px dotted #fff;
+}
+
+#all {
+  height: 65vh;
+}
+
+.special-position {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  transition: 500ms;
+  z-index: 2;
+}
+
+.card {
+  z-index: 3;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: all 500ms;
+  background-color: rgba(27, 96, 199, 0.7294117647);
+  z-index: 1;
+}
+.card:hover::after {
+  content: "";
+  height: 100%;
+}
+.card:hover .special-position {
+  bottom: 20px;
+}/*# sourceMappingURL=style.css.map */

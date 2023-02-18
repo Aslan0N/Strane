@@ -1,0 +1,122 @@
+body{
+    font-family: "Manrope", sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    li{
+        list-style: none;
+    }
+}
+header{
+    width: 100%;
+    height: 16vh;
+    nav{
+        width: 85%;
+        height: 100%;
+        ul{
+            width: 50%;
+            overflow: hidden;
+        }
+        button{
+            display: none;
+        }
+    }
+}
+.button-special{
+    background-image:linear-gradient(to right, #0944b6 , #439af7) ;
+    padding: 16px 18px;
+    display: inline-block;
+    // width: 15% ;
+    text-align: center;
+    border-radius: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight:600 ;
+    position: relative;
+    z-index: 3;
+}
+
+@media(max-width:990px){
+    header{
+        nav{
+            button{
+                display: block;
+            }
+            .sp-ul{
+                display: none !important;
+            }
+            a{
+                display: none !important;
+            }
+        }
+    }
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-23{
+    font-size: 23px;
+}
+.fs-60{
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+.color-blue{
+    color: #1b5fc7;
+}
+.color-orange{
+    color: #ed7b5cdd;
+}
+.bg-blue{
+    background-color:  #1446b2;
+}
+.bg-orange{
+    background-color: #f17e59;
+}
+.bg-light-blue{
+    background-color: #f1f5f9;
+}
+.bg-light-grey{
+    background-color: #181c2b;
+}
+.bg-dark-blue{
+    background-color: #101320;
+}
+.border-dotted{
+    border: 1.4px dotted #fff;
+}
+#all{
+    height: 65vh;
+}
+.special-position{
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    transition: 500ms;
+    z-index: 2;
+}
+.card{
+    z-index: 3;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        transition: all 500ms;
+        background-color: #1b60c7ba;
+        z-index: 1;
+    }
+    &:hover{
+        &::after{
+            content: '';
+            height: 100%;
+        }
+        .special-position{
+            bottom: 20px;
+        }
+    }
+}
