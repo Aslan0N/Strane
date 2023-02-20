@@ -28,7 +28,6 @@ header{
     background-image:linear-gradient(to right, #0944b6 , #439af7) ;
     padding: 16px 18px;
     display: inline-block;
-    // width: 15% ;
     text-align: center;
     border-radius: 40px;
     color: #fff;
@@ -52,6 +51,9 @@ header{
             }
         }
     }
+}
+.fs-13{
+    font-size: 13px;
 }
 .fs-20{
     font-size: 20px;
@@ -87,12 +89,15 @@ header{
 .border-dotted{
     border: 1.4px dotted #fff;
 }
+.border-blue{
+    border: 1px solid #1446b2;
+}
 #all{
     height: 65vh;
 }
 .special-position{
     position: absolute;
-    bottom: -70px;
+    bottom: -100px;
     left: 0;
     transition: 500ms;
     z-index: 2;
@@ -118,5 +123,36 @@ header{
         .special-position{
             bottom: 20px;
         }
+    }
+}
+.special-custom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 0; 
+    overflow: hidden;
+    transition: 600ms;
+    ul{
+        height: 70%;
+        width: 90%;
+        li{
+            width: 100%;
+        }
+    }
+    .i-con{
+        width: 200px;
+        i{
+            transition: 400ms;
+            &:hover{
+                background-color: #1446b2;
+                color: #fff;
+            }
+        }
+    }
+}
+button{
+    &:focus+ .special-custom{
+        width: 300px;
     }
 }

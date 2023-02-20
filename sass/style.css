@@ -50,6 +50,10 @@ header nav button {
     display: none !important;
   }
 }
+.fs-13 {
+  font-size: 13px;
+}
+
 .fs-20 {
   font-size: 20px;
 }
@@ -95,13 +99,17 @@ header nav button {
   border: 1.4px dotted #fff;
 }
 
+.border-blue {
+  border: 1px solid #1446b2;
+}
+
 #all {
   height: 65vh;
 }
 
 .special-position {
   position: absolute;
-  bottom: -70px;
+  bottom: -100px;
   left: 0;
   transition: 500ms;
   z-index: 2;
@@ -127,4 +135,35 @@ header nav button {
 }
 .card:hover .special-position {
   bottom: 20px;
+}
+
+.special-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80vh;
+  width: 0;
+  overflow: hidden;
+  transition: 600ms;
+}
+.special-custom ul {
+  height: 70%;
+  width: 90%;
+}
+.special-custom ul li {
+  width: 100%;
+}
+.special-custom .i-con {
+  width: 200px;
+}
+.special-custom .i-con i {
+  transition: 400ms;
+}
+.special-custom .i-con i:hover {
+  background-color: #1446b2;
+  color: #fff;
+}
+
+button:focus + .special-custom {
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */
